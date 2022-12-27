@@ -28,6 +28,10 @@ guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide
 *******************
 Server Requirements
 *******************
+PHP Version i used is 7.4.27 
+MySql Version 10.4.22-MariaDB
+Codeigniter version 3.1.13
+
 
 PHP version 5.6 or newer is recommended.
 
@@ -35,12 +39,24 @@ It should work on 5.3.7 as well, but we strongly advise you NOT to run
 such old versions of PHP, because of potential security and performance
 issues, as well as missing features.
 
+
+
 ************
 Installation
 ************
 
 Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
 of the CodeIgniter User Guide.
+
+Steps 
+1) Download codeigniter 3.1.13 from official website.
+2) Config base url /application/config/config.php 
+3) Config database hostname="localhost", username="root", password="", database="synkrama_db"
+4) create database with tables (users).
+5) Configer autoload libraries, helper
+6) Set Defualt Controller as a User_controller /application/config/routes.php
+7) Create /assets folder for css and js files 
+8) create views,controller,models.
 
 *******
 License
